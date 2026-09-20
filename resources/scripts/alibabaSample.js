@@ -1,5 +1,5 @@
 
-    // ---- Jalali (Persian) calendar helpers ----
+    // ---- Jalali calendar helpers ----
     function jDiv(a, b){ return Math.floor(a / b); }
     function jMod(a, b){ return a - jDiv(a, b) * b; }
 
@@ -303,7 +303,7 @@
     });
 });
 
-    // Hotel: check-out unlocks once check-in is picked, and can't be before the night after check-in
+    // Hotel: check-out unlocks once check-in is picked, can't be before the night after check-in
     const checkinField = document.querySelector('.date-field[data-field="checkin"]');
     const checkoutField = document.querySelector('.date-field[data-field="checkout"]');
     const checkinInput = document.getElementById('checkin');
@@ -453,7 +453,7 @@
     swapBtn.classList.toggle('spun');
 });
 
-    // FAQ category tabs
+    // FAQ tabs
     const faqTabs = document.querySelectorAll('.faq-tab');
     const faqLists = document.querySelectorAll('.faq-list');
     faqTabs.forEach(tab => {
@@ -465,7 +465,7 @@
     });
 });
 
-    // FAQ accordion (one open item per category at a time)
+    // FAQ accordion ( open one item at the time)
     document.querySelectorAll('.faq-question').forEach(btn => {
     btn.addEventListener('click', () => {
         const item = btn.closest('.faq-item');
