@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>علی‌بابا | رزرو بلیط پرواز، قطار، اتوبوس و هتل</title>
+<link rel="stylesheet" href="./resources/styles/alibabaSample.css">
+  <script src="./resources/scripts/alibabaSample.js" defer="defer"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-row">
+    <a href="#" class="logo">
+      <span class="logo-mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12l7-8v5h11v6H10v5z"/>
+        </svg>
+      </span>
+      علی‌بابا
+    </a>
+    <nav class="main-nav">
+      <a href="#search">پرواز</a>
+      <a href="#search">قطار</a>
+      <a href="#search">اتوبوس</a>
+      <a href="#search">هتل</a>
+      <a href="#destinations">تور</a>
+      <a href="#features">درباره ما</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="header-util-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0116 0v1"/><rect x="2" y="13" width="4" height="6" rx="1.5"/><rect x="18" y="13" width="4" height="6" rx="1.5"/><path d="M20 19v1a3 3 0 01-3 3h-2"/></svg>
+        <span class="header-util-text">پشتیبانی</span>
+      </a>
+      <a href="#" class="header-util-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><line x1="9" y1="6" x2="9" y2="18" stroke-dasharray="2 2"/></svg>
+        <span class="header-util-text">بلیط‌های من</span>
+      </a>
+      <button class="header-account-btn" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+        ورود / ثبت‌نام
+      </button>
+      <button class="hamburger" aria-label="باز کردن منو"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav-drawer">
+  <a href="#search">پرواز</a>
+  <a href="#search">قطار</a>
+  <a href="#search">اتوبوس</a>
+  <a href="#search">هتل</a>
+  <a href="#destinations">تور</a>
+  <a href="#features">درباره ما</a>
+</nav>
+
+<section class="hero" id="search">
+  <svg class="hero-route" viewBox="0 0 1180 420" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M60,340 C260,180 420,120 620,150 C820,180 950,110 1130,80"/>
+    <circle class="pulse" cx="60" cy="340" r="5"/>
+    <circle class="pulse" cx="620" cy="150" r="5"/>
+    <circle class="pulse" cx="1130" cy="80" r="5"/>
+  </svg>
+
+  <div class="wrap hero-inner">
+    <span class="hero-eyebrow">✦ رزرو آنلاین در کمتر از ۲ دقیقه</span>
+    <h1>سفر بعدی‌ات از <em>اینجا</em><br>شروع می‌شه</h1>
+    <p class="hero-sub">پرواز، قطار، اتوبوس، هتل و تور؛ همه‌ی ایران و مقصدهای خارجی، با چند کلیک روی گوشی یا لپ‌تاپت.</p>
+
+    <div class="search-widget">
+      <div class="search-tabs" role="tablist">
+        <button class="search-tab is-active" data-mode="transport" data-tab="flight" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l6 3 12-9-9 12-3-6-6-0z"/></svg>
+          پرواز
+        </button>
+        <button class="search-tab" data-mode="transport" data-tab="train" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="14" rx="3"/><circle cx="9" cy="20" r="1"/><circle cx="15" cy="20" r="1"/><line x1="6" y1="11" x2="18" y2="11"/></svg>
+          قطار
+        </button>
+        <button class="search-tab" data-mode="transport" data-tab="bus" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="11" rx="3"/><circle cx="7.5" cy="19.5" r="1.3"/><circle cx="16.5" cy="19.5" r="1.3"/><line x1="3" y1="12" x2="21" y2="12"/></svg>
+          اتوبوس
+        </button>
+        <button class="search-tab" data-mode="hotel" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19v-9a2 2 0 012-2h3v5"/><path d="M3 14h18v5"/><rect x="10" y="8" width="11" height="6" rx="1.5"/></svg>
+          هتل
+        </button>
+        <button class="search-tab" data-mode="tour" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2"/></svg>
+          تور
+        </button>
+      </div>
+
+      <div class="search-panel">
+        <div class="search-fields is-active" data-mode="transport">
+          <div class="fields-grid">
+            <div class="field">
+              <label for="from">مبدأ</label>
+              <input id="from" type="text" value="تهران" placeholder="از کجا؟">
+            </div>
+            <button class="swap-btn" type="button" aria-label="جابه‌جایی مبدأ و مقصد">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"/><path d="M3 7h18"/><path d="M7 21l-4-4 4-4"/><path d="M21 17H3"/></svg>
+            </button>
+            <div class="field">
+              <label for="to">مقصد</label>
+              <input id="to" type="text" value="شیراز" placeholder="کجا می‌ری؟">
+            </div>
+          </div>
+          <div class="trip-type-row">
+            <span class="trip-type-label">نوع سفر</span>
+            <div class="trip-type-switch">
+              <button type="button" class="trip-type-option is-active" data-trip="oneway">یک‌طرفه</button>
+              <button type="button" class="trip-type-option" data-trip="roundtrip">رفت و برگشت</button>
+              <span class="trip-type-thumb"></span>
+            </div>
+
+            <div class="train-options-row" data-train-only hidden>
+              <label class="option-checkbox">
+                <input type="checkbox" id="compartment-exclusive">
+                <span class="option-checkbox-label">کوپه دربست</span>
+              </label>
+              <label class="option-checkbox">
+                <input type="checkbox" id="car-transport">
+                <span class="option-checkbox-label">حمل خودرو</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="fields-grid-3col">
+            <div class="field date-field" data-field="depart">
+              <label for="depart">تاریخ رفت</label>
+              <input id="depart" type="text" readonly placeholder="انتخاب تاریخ">
+              <div class="calendar-popup" hidden>
+                <div class="calendar-weekdays"><span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span></div>
+                <div class="calendar-days"></div>
+                <div class="calendar-header">
+                  <button type="button" class="cal-nav" data-dir="prev" aria-label="ماه قبل">›</button>
+                  <span class="calendar-title"></span>
+                  <button type="button" class="cal-nav" data-dir="next" aria-label="ماه بعد">‹</button>
+                </div>
+              </div>
+            </div>
+            <div class="field date-field is-disabled" data-field="return">
+              <label for="return-date">تاریخ برگشت</label>
+              <input id="return-date" type="text" readonly disabled placeholder="ابتدا رفت و برگشت را انتخاب کن">
+              <div class="calendar-popup" hidden>
+                <div class="calendar-weekdays"><span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span></div>
+                <div class="calendar-days"></div>
+                <div class="calendar-header">
+                  <button type="button" class="cal-nav" data-dir="prev" aria-label="ماه قبل">›</button>
+                  <span class="calendar-title"></span>
+                  <button type="button" class="cal-nav" data-dir="next" aria-label="ماه بعد">‹</button>
+                </div>
+              </div>
+            </div>
+            <div class="field people-field has-popup" data-field="passengers">
+              <label for="passengers">مسافران</label>
+              <input id="passengers" type="text" readonly placeholder="انتخاب مسافران">
+              <div class="calendar-popup counter-popup" hidden>
+                <div class="counter-row" data-type="adult">
+                  <span class="counter-label"><strong>بزرگسال</strong><small>(۱۲ سال به بالا)</small></span>
+                  <div class="counter-controls">
+                    <button type="button" class="counter-btn" data-action="minus" aria-label="کم کردن">−</button>
+                    <span class="counter-value">۰</span>
+                    <button type="button" class="counter-btn" data-action="plus" aria-label="زیاد کردن">+</button>
+                  </div>
+                </div>
+                <div class="counter-row" data-type="child">
+                  <span class="counter-label"><strong>کودک</strong><small>(از ۲ سال تا ۱۲ سال)</small></span>
+                  <div class="counter-controls">
+                    <button type="button" class="counter-btn" data-action="minus" aria-label="کم کردن">−</button>
+                    <span class="counter-value">۰</span>
+                    <button type="button" class="counter-btn" data-action="plus" aria-label="زیاد کردن">+</button>
+                  </div>
+                </div>
+                <div class="counter-row" data-type="infant">
+                  <span class="counter-label"><strong>نوزاد</strong><small>(۲۰ روز تا ۲ سال)</small></span>
+                  <div class="counter-controls">
+                    <button type="button" class="counter-btn" data-action="minus" aria-label="کم کردن">−</button>
+                    <span class="counter-value">۰</span>
+                    <button type="button" class="counter-btn" data-action="plus" aria-label="زیاد کردن">+</button>
+                  </div>
+                </div>
+                <div class="counter-actions">
+                  <button type="button" class="counter-action-btn counter-reset-btn">پاک کردن</button>
+                  <button type="button" class="counter-action-btn counter-confirm-btn">تأیید</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-fields" data-mode="hotel">
+          <div class="fields-grid-hotel">
+            <div class="field">
+              <label for="hotel-dest">مقصد</label>
+              <input id="hotel-dest" type="text" value="اصفهان" placeholder="کدوم شهر؟">
+            </div>
+            <div class="field date-field has-popup" data-field="checkin">
+              <label for="checkin">تاریخ ورود</label>
+              <input id="checkin" type="text" readonly placeholder="انتخاب تاریخ">
+              <div class="calendar-popup" hidden>
+                <div class="calendar-weekdays"><span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span></div>
+                <div class="calendar-days"></div>
+                <div class="calendar-header">
+                  <button type="button" class="cal-nav" data-dir="prev" aria-label="ماه قبل">›</button>
+                  <span class="calendar-title"></span>
+                  <button type="button" class="cal-nav" data-dir="next" aria-label="ماه بعد">‹</button>
+                </div>
+              </div>
+            </div>
+            <div class="field date-field has-popup is-disabled" data-field="checkout">
+              <label for="checkout">تاریخ خروج</label>
+              <input id="checkout" type="text" readonly disabled placeholder="ابتدا ورود را انتخاب کن">
+              <div class="calendar-popup" hidden>
+                <div class="calendar-weekdays"><span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span></div>
+                <div class="calendar-days"></div>
+                <div class="calendar-header">
+                  <button type="button" class="cal-nav" data-dir="prev" aria-label="ماه قبل">›</button>
+                  <span class="calendar-title"></span>
+                  <button type="button" class="cal-nav" data-dir="next" aria-label="ماه بعد">‹</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field people-field has-popup" data-field="guests" style="margin-top:14px;">
+            <label for="guests">تعداد مهمان</label>
+            <input id="guests" type="text" readonly placeholder="انتخاب مهمان‌ها">
+            <div class="calendar-popup counter-popup" hidden>
+              <div class="counter-row" data-type="adult">
+                <span class="counter-label"><strong>بزرگسال</strong><small>(۱۲ سال به بالا)</small></span>
+                <div class="counter-controls">
+                  <button type="button" class="counter-btn" data-action="minus" aria-label="کم کردن">−</button>
+                  <span class="counter-value">۱</span>
+                  <button type="button" class="counter-btn" data-action="plus" aria-label="زیاد کردن">+</button>
+                </div>
+              </div>
+              <div class="counter-row" data-type="child">
+                <span class="counter-label"><strong>کودک</strong><small>(از ۲ سال تا ۱۲ سال)</small></span>
+                <div class="counter-controls">
+                  <button type="button" class="counter-btn" data-action="minus" aria-label="کم کردن">−</button>
+                  <span class="counter-value">۰</span>
+                  <button type="button" class="counter-btn" data-action="plus" aria-label="زیاد کردن">+</button>
+                </div>
+              </div>
+              <div class="counter-row" data-type="infant">
+                <span class="counter-label"><strong>نوزاد</strong><small>(۲۰ روز تا ۲ سال)</small></span>
+                <div class="counter-controls">
+                  <button type="button" class="counter-btn" data-action="minus" aria-label="کم کردن">−</button>
+                  <span class="counter-value">۰</span>
+                  <button type="button" class="counter-btn" data-action="plus" aria-label="زیاد کردن">+</button>
+                </div>
+              </div>
+              <div class="counter-actions">
+                <button type="button" class="counter-action-btn counter-reset-btn">پاک کردن</button>
+                <button type="button" class="counter-action-btn counter-confirm-btn">تأیید</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-fields" data-mode="tour">
+          <div class="fields-grid-tour">
+            <div class="field">
+              <label for="tour-dest">مقصد تور</label>
+              <input id="tour-dest" type="text" value="کیش" placeholder="کجا بریم؟">
+            </div>
+            <div class="field date-field has-popup" data-field="tour-date">
+              <label for="tour-date">تاریخ حرکت</label>
+              <input id="tour-date" type="text" readonly placeholder="انتخاب تاریخ">
+              <div class="calendar-popup" hidden>
+                <div class="calendar-weekdays"><span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span></div>
+                <div class="calendar-days"></div>
+                <div class="calendar-header">
+                  <button type="button" class="cal-nav" data-dir="prev" aria-label="ماه قبل">›</button>
+                  <span class="calendar-title"></span>
+                  <button type="button" class="cal-nav" data-dir="next" aria-label="ماه بعد">‹</button>
+                </div>
+              </div>
+            </div>
+            <div class="field people-field has-popup" data-field="tour-people">
+              <label for="tour-people">تعداد نفرات</label>
+              <input id="tour-people" type="text" readonly placeholder="انتخاب نفرات">
+              <div class="calendar-popup counter-popup" hidden>
+                <div class="counter-row" data-type="adult">
+                  <span class="counter-label"><strong>بزرگسال</strong><small>(۱۲ سال به بالا)</small></span>
+                  <div class="counter-controls">
+                    <button type="button" class="counter-btn" data-action="minus" aria-label="کم کردن">−</button>
+                    <span class="counter-value">۱</span>
+                    <button type="button" class="counter-btn" data-action="plus" aria-label="زیاد کردن">+</button>
+                  </div>
+                </div>
+                <div class="counter-row" data-type="child">
+                  <span class="counter-label"><strong>کودک</strong><small>(از ۲ سال تا ۱۲ سال)</small></span>
+                  <div class="counter-controls">
+                    <button type="button" class="counter-btn" data-action="minus" aria-label="کم کردن">−</button>
+                    <span class="counter-value">۰</span>
+                    <button type="button" class="counter-btn" data-action="plus" aria-label="زیاد کردن">+</button>
+                  </div>
+                </div>
+                <div class="counter-row" data-type="infant">
+                  <span class="counter-label"><strong>نوزاد</strong><small>(۲۰ روز تا ۲ سال)</small></span>
+                  <div class="counter-controls">
+                    <button type="button" class="counter-btn" data-action="minus" aria-label="کم کردن">−</button>
+                    <span class="counter-value">۰</span>
+                    <button type="button" class="counter-btn" data-action="plus" aria-label="زیاد کردن">+</button>
+                  </div>
+                </div>
+                <div class="counter-actions">
+                  <button type="button" class="counter-action-btn counter-reset-btn">پاک کردن</button>
+                  <button type="button" class="counter-action-btn counter-confirm-btn">تأیید</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-panel-footer">
+          <span class="search-hint">امکان استرداد و تغییر بلیط تا قبل از پرواز</span>
+          <button class="search-submit" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+            جستجو و مقایسه قیمت
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="trust-card">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      <div><strong>۲۰ میلیون+</strong><span>مسافر راضی</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 010 20 15 15 0 010-20z"/></svg>
+      <div><strong>۵۰۰+</strong><span>مقصد داخلی و خارجی</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      <div><strong>۲۴ ساعته</strong><span>پشتیبانی همه‌ی روزهای هفته</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>۹۸٪</strong><span>رضایت از خرید آنلاین</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="destinations" id="destinations">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">کجا بریم؟</span>
+      <h2 id="destinations-heading">مقصدهای محبوب این روزها</h2>
+      <p>از دل کویر تا کنار خلیج فارس، مقصدهایی که مسافرهای علی‌بابا بیشتر رزرو می‌کنن.</p>
+    </div>
+
+    <div class="dest-grid">
+      <div class="dest-card dest-1">
+        <div class="art">
+          <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+            <rect x="0" y="70" width="300" height="30" fill="rgba(255,255,255,.10)"/>
+            <rect x="30" y="35" width="16" height="65" fill="rgba(255,255,255,.16)"/>
+            <rect x="60" y="50" width="20" height="50" fill="rgba(255,255,255,.14)"/>
+            <rect x="150" y="20" width="10" height="80" fill="rgba(255,255,255,.22)"/>
+            <rect x="200" y="45" width="18" height="55" fill="rgba(255,255,255,.14)"/>
+            <rect x="240" y="30" width="14" height="70" fill="rgba(255,255,255,.18)"/>
+          </svg>
+        </div>
+        <div class="info">
+          <h3>تهران</h3>
+          <p class="price">پرواز از <b>۹۸۰,۰۰۰ تومان</b></p>
+        </div>
+      </div>
+
+      <div class="dest-card dest-2">
+        <div class="art">
+          <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+            <rect x="0" y="75" width="300" height="25" fill="rgba(255,255,255,.10)"/>
+            <circle cx="70" cy="62" r="24" fill="rgba(255,255,255,.18)"/>
+            <rect x="55" y="60" width="30" height="40" fill="rgba(255,255,255,.18)"/>
+            <circle cx="160" cy="55" r="30" fill="rgba(255,255,255,.16)"/>
+            <rect x="140" y="52" width="40" height="48" fill="rgba(255,255,255,.16)"/>
+            <circle cx="240" cy="65" r="20" fill="rgba(255,255,255,.2)"/>
+            <rect x="228" y="62" width="24" height="38" fill="rgba(255,255,255,.2)"/>
+          </svg>
+        </div>
+        <div class="info">
+          <h3>اصفهان</h3>
+          <p class="price">هتل از <b>۱,۲۰۰,۰۰۰ تومان</b></p>
+        </div>
+      </div>
+
+      <div class="dest-card dest-3">
+        <div class="art">
+          <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+            <rect x="0" y="78" width="300" height="22" fill="rgba(0,0,0,.12)"/>
+            <rect x="40" y="30" width="10" height="60" fill="rgba(255,255,255,.28)"/>
+            <rect x="70" y="30" width="10" height="60" fill="rgba(255,255,255,.28)"/>
+            <rect x="100" y="30" width="10" height="60" fill="rgba(255,255,255,.28)"/>
+            <rect x="160" y="30" width="10" height="60" fill="rgba(255,255,255,.28)"/>
+            <rect x="190" y="30" width="10" height="60" fill="rgba(255,255,255,.28)"/>
+            <rect x="30" y="24" width="190" height="8" fill="rgba(255,255,255,.22)"/>
+          </svg>
+        </div>
+        <div class="info">
+          <h3>شیراز</h3>
+          <p class="price">قطار از <b>۶۵۰,۰۰۰ تومان</b></p>
+        </div>
+      </div>
+
+      <div class="dest-card dest-4">
+        <div class="art">
+          <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+            <rect x="0" y="75" width="300" height="25" fill="rgba(255,255,255,.08)"/>
+            <circle cx="150" cy="48" r="36" fill="rgba(217,164,65,.35)"/>
+            <rect x="122" y="46" width="56" height="52" fill="rgba(217,164,65,.28)"/>
+            <rect x="60" y="60" width="16" height="40" fill="rgba(255,255,255,.14)"/>
+            <rect x="224" y="60" width="16" height="40" fill="rgba(255,255,255,.14)"/>
+          </svg>
+        </div>
+        <div class="info">
+          <h3>مشهد</h3>
+          <p class="price">پرواز از <b>۸۷۰,۰۰۰ تومان</b></p>
+        </div>
+      </div>
+
+      <div class="dest-card dest-5">
+        <div class="art">
+          <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+            <circle cx="245" cy="28" r="16" fill="rgba(255,255,255,.35)"/>
+            <rect x="0" y="80" width="300" height="20" fill="rgba(255,255,255,.12)"/>
+            <path d="M60 100 C60 60 45 45 30 40 C48 45 65 60 65 100 Z" fill="rgba(255,255,255,.2)"/>
+            <path d="M140 100 C140 55 122 38 105 32 C126 38 145 55 145 100 Z" fill="rgba(255,255,255,.16)"/>
+          </svg>
+        </div>
+        <div class="info">
+          <h3>کیش</h3>
+          <p class="price">تور از <b>۳,۴۰۰,۰۰۰ تومان</b></p>
+        </div>
+      </div>
+
+      <div class="dest-card dest-6">
+        <div class="art">
+          <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+            <rect x="0" y="78" width="300" height="22" fill="rgba(255,255,255,.08)"/>
+            <circle cx="130" cy="55" r="26" fill="rgba(255,255,255,.18)"/>
+            <rect x="112" y="55" width="36" height="45" fill="rgba(255,255,255,.18)"/>
+            <rect x="70" y="65" width="12" height="35" fill="rgba(255,255,255,.14)"/>
+            <rect x="190" y="65" width="12" height="35" fill="rgba(255,255,255,.14)"/>
+            <circle cx="230" cy="30" r="10" fill="rgba(255,255,255,.25)"/>
+          </svg>
+        </div>
+        <div class="info">
+          <h3>استانبول</h3>
+          <p class="price">پرواز از <b>۴,۱۰۰,۰۰۰ تومان</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="route-divider">
+  <svg viewBox="0 0 1180 40" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="0" y1="20" x2="1180" y2="20"/>
+    <circle cx="0" cy="20" r="4"/>
+    <circle cx="1180" cy="20" r="4"/>
+  </svg>
+</div>
+
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">چرا علی‌بابا؟</span>
+      <h2>سفر بدون دردسر</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V6a2 2 0 012-2h12a2 2 0 012 2v6"/><path d="M2 12h20l-2 8H4l-2-8z"/><line x1="9" y1="6" x2="9" y2="16"/></svg>
+        </div>
+        <h3>صدور آنی بلیط</h3>
+        <p>بلیط پروازت همون لحظه صادر می‌شه، بدون معطلی و تماس تلفنی.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-5.5 8-12a8 8 0 10-16 0c0 6.5 8 12 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>پشتیبانی سراسری</h3>
+        <p>هر ساعت از شبانه‌روز، کارشناس‌های ما کنارت هستن؛ توی سفر تنها نیستی.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+        </div>
+        <h3>پرداخت امن</h3>
+        <p>درگاه بانکی مطمئن و رمزنگاری‌شده، برای خیالت راحت موقع خرید.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </div>
+        <h3>مقایسه هوشمند قیمت</h3>
+        <p>همه‌ی گزینه‌ها رو کنار هم می‌بینی و ارزون‌ترینش رو انتخاب می‌کنی.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">راهنما</span>
+      <h2>سوالات متداول</h2>
+      <p>هر بخش رو انتخاب کن تا سوال‌های مخصوص همون بخش رو ببینی.</p>
+    </div>
+
+    <div class="faq-tabs">
+      <button class="faq-tab is-active" data-faq="flight" type="button">پرواز</button>
+      <button class="faq-tab" data-faq="train" type="button">قطار</button>
+      <button class="faq-tab" data-faq="bus" type="button">اتوبوس</button>
+      <button class="faq-tab" data-faq="hotel" type="button">هتل</button>
+      <button class="faq-tab" data-faq="tour" type="button">تور</button>
+    </div>
+
+    <div class="faq-list is-active" data-faq="flight">
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>چطور می‌تونم بلیط پروازم رو کنسل یا استرداد کنم؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>از قسمت «بلیط‌های من» بلیط موردنظرت رو انتخاب و گزینه‌ی استرداد رو بزن. مبلغ قابل استرداد بر اساس قوانین هر ایرلاین و فاصله‌ی زمانی تا پرواز محاسبه و به کیف‌پول یا کارتت برگردونده می‌شه.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>آیا می‌تونم تاریخ یا مسیر پروازم رو تغییر بدم؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>بله، بیشتر بلیط‌های داخلی و خارجی قابل تغییر هستن. از بخش «بلیط‌های من»، گزینه‌ی تغییر تاریخ رو بزن؛ ممکنه بسته به نوع بلیط، مابه‌التفاوت قیمت یا جریمه‌ی تغییر محاسبه بشه.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>چمدان همراه و دستی شامل چه مقداری می‌شه؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>مقدار بار مجاز بسته به ایرلاین و نوع بلیط فرق می‌کنه و معمولاً بین ۲۰ تا ۳۰ کیلوگرم بار همراه به‌علاوه‌ی یک ساک دستیه. جزئیات دقیق هر پرواز توی صفحه‌ی نتایج جستجو کنار قیمت نمایش داده می‌شه.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>بلیط الکترونیکی بعد از خرید چقدر طول می‌کشه صادر بشه؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>بلافاصله بعد از پرداخت موفق، بلیط الکترونیکی صادر و هم توی اپلیکیشن و هم از طریق پیامک و ایمیل برات ارسال می‌شه؛ نیازی به تماس یا پیگیری نداره.</p></div>
+      </div>
+    </div>
+
+    <div class="faq-list" data-faq="train">
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>کوپه دربست یعنی چی و چطور رزروش کنم؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>با انتخاب گزینه‌ی «کوپه دربست» هنگام رزرو، تمام صندلی‌های کوپه فقط برای شما و همراهانتون رزرو می‌شه و مسافر غریبه‌ای توی همون کوپه قرار نمی‌گیره. هزینه‌ی صندلی‌های خالی هم به قیمت نهایی اضافه می‌شه.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>حمل خودرو با قطار چطور انجام می‌شه؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>فقط در برخی مسیرهای مشخص و با قطارهای مجهز به واگن حمل خودرو امکان‌پذیره. کافیه هنگام رزرو بلیط، تیک «حمل خودرو با قطار» رو بزنی تا مشخصات خودرو و مسیرهای فعال نشون داده بشه.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>تا چند ساعت قبل از حرکت می‌تونم بلیط قطار رو استرداد کنم؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>معمولاً تا ۲ ساعت قبل از حرکت قطار امکان استرداد با کسر جریمه‌ی مصوب وجود داره. هرچه به زمان حرکت نزدیک‌تر باشی، درصد جریمه‌ی استرداد بیشتر می‌شه.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>چه فرقی بین قطارهای رجا، فدک و سایر شرکت‌ها هست؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>هر شرکت امکانات، سطح راحتی صندلی و قیمت متفاوتی داره. توی نتایج جستجو می‌تونی نوع قطار (اتوبوسی، ۴ تخته، پارسی و...) رو کنار هم مقایسه و بهترین گزینه رو انتخاب کنی.</p></div>
+      </div>
+    </div>
+
+    <div class="faq-list" data-faq="bus">
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>فرق اتوبوس‌های VIP با معمولی چیه؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>اتوبوس‌های VIP معمولاً فضای پای بیشتر، تعداد صندلی کمتر در هر ردیف و پذیرایی بهتری دارن. این مشخصات کنار هر گزینه توی نتایج جستجو نوشته شده تا راحت مقایسه کنی.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>می‌تونم موقع خرید، صندلی دلخواهم رو انتخاب کنم؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>بله، بعد از انتخاب اتوبوس موردنظر، نقشه‌ی صندلی‌ها نمایش داده می‌شه و می‌تونی صندلی خالی دلخواهت رو مشخص کنی.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>چقدر زودتر از حرکت باید توی ترمینال باشم؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>پیشنهاد می‌شه حداقل ۳۰ تا ۴۵ دقیقه زودتر از ساعت حرکت درج‌شده روی بلیط، در ترمینال حاضر باشی تا مشکلی برای سوار شدن پیش نیاد.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>قوانین استرداد بلیط اتوبوس چیه؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>استرداد بلیط اتوبوس تا قبل از حرکت با کسر جریمه‌ی مصوب سازمان راهداری امکان‌پذیره؛ هرچه زودتر اقدام کنی، جریمه‌ی کمتری کسر می‌شه.</p></div>
+      </div>
+    </div>
+
+    <div class="faq-list" data-faq="hotel">
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>هزینه‌ی هتل موقع رزرو کسر می‌شه یا موقع ورود؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>بسته به نوع تعرفه فرق می‌کنه؛ بعضی هتل‌ها پرداخت آنلاین و کامل هنگام رزرو رو می‌خوان و بعضی دیگه فقط بیعانه می‌گیرن و باقی مبلغ موقع ورود در هتل تسویه می‌شه. این مورد کنار هر هتل مشخص شده.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>آیا می‌تونم رزرو هتل رو بدون جریمه لغو کنم؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>بسیاری از هتل‌ها گزینه‌ی «کنسلی رایگان تا چند روز قبل از ورود» دارن که با آیکون مخصوص کنار قیمت مشخص شده؛ در غیر این‌صورت قوانین کنسلی هر هتل قبل از پرداخت نمایش داده می‌شه.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>ساعت استاندارد ورود و خروج هتل‌ها چه زمانیه؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>معمولاً ساعت ورود از ۱۴ به بعد و ساعت خروج تا ۱۲ ظهره، ولی این زمان‌بندی می‌تونه بین هتل‌ها کمی فرق داشته باشه و توی جزئیات هر هتل قید شده.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>اگه تعداد مهمان‌ها بیشتر از ظرفیت اتاق باشه چی می‌شه؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>موقع رزرو، تعداد بزرگسال و کودک رو دقیق وارد کن تا فقط اتاق‌های مناسب همون ظرفیت نشون داده بشه؛ در غیر این‌صورت ممکنه هتل هنگام پذیرش، هزینه‌ی تخت اضافه دریافت کنه.</p></div>
+      </div>
+    </div>
+
+    <div class="faq-list" data-faq="tour">
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>هزینه‌ی تور شامل چه مواردی می‌شه؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>معمولاً بلیط رفت‌وبرگشت، اقامت در هتل و صبحانه توی هزینه‌ی تور حساب می‌شه. خدمات اضافه مثل گشت شهری یا وعده‌های غذایی دیگه، توی توضیحات هر تور جدا مشخص شده.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>بیمه‌ی مسافرتی توی تورها هست؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>برای تورهای خارجی، بیمه‌ی مسافرتی معمولاً جزو الزامات و توی قیمت نهایی لحاظ شده. برای تورهای داخلی هم امکان افزودن بیمه‌ی اختیاری هنگام رزرو وجود داره.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>اگه تور کنسل بشه، پولم برمی‌گرده؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>اگه تور از سمت آژانس برگزارکننده کنسل بشه، کل مبلغ پرداختی بدون کسر جریمه به حساب یا کیف‌پولت برمی‌گرده. برای انصراف از طرف مسافر، قوانین کنسلی هر تور قبل از خرید نمایش داده می‌شه.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>محدودیت سنی برای شرکت توی تورها وجود داره؟</span>
+          <span class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>بیشتر تورها محدودیت سنی خاصی ندارن، ولی برای تورهای خاص (مثل سفرهای ورزشی یا کوهنوردی) ممکنه حداقل سن لازم توی توضیحات همون تور قید شده باشه.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="app-promo-wrap">
+  <div class="app-promo">
+    <div class="app-copy">
+      <h2>علی‌بابا همیشه توی جیبته</h2>
+      <p>اپلیکیشن رو نصب کن، بلیط‌هات رو مدیریت کن و از تخفیف‌های ویژه‌ی اپ باخبر شو.</p>
+      <div class="store-badges">
+        <a class="store-badge" href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="M8 11l4 4 4-4"/><path d="M4 21h16"/></svg>
+          دانلود از کافه‌بازار
+        </a>
+        <a class="store-badge" href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="M8 11l4 4 4-4"/><path d="M4 21h16"/></svg>
+          دانلود از مایکت
+        </a>
+      </div>
+    </div>
+    <div class="phone-mock" aria-hidden="true">
+      <div class="bar short"></div>
+      <div class="bar" style="width:80%"></div>
+      <div class="chip"></div>
+      <div class="chip"></div>
+      <div class="bar" style="width:60%"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-mark">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l7-8v5h11v6H10v5z"/></svg>
+          </span>
+          علی‌بابا
+        </a>
+        <p>مرجع رزرو آنلاین بلیط پرواز، قطار، اتوبوس، هتل و تور در سراسر ایران.</p>
+        <div class="social-row">
+          <a href="#" aria-label="اینستاگرام">In</a>
+          <a href="#" aria-label="تلگرام">Tg</a>
+          <a href="#" aria-label="ایکس">X</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>خدمات</h4>
+        <ul>
+          <li><a href="#">بلیط هواپیما</a></li>
+          <li><a href="#">بلیط قطار</a></li>
+          <li><a href="#">بلیط اتوبوس</a></li>
+          <li><a href="#">رزرو هتل</a></li>
+          <li><a href="#">تور مسافرتی</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>راهنما</h4>
+        <ul>
+          <li><a href="#">سوالات متداول</a></li>
+          <li><a href="#">قوانین استرداد بلیط</a></li>
+          <li><a href="#">حریم خصوصی</a></li>
+          <li><a href="#">تماس با پشتیبانی</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>درباره علی‌بابا</h4>
+        <ul>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">فرصت‌های شغلی</a></li>
+          <li><a href="#">وبلاگ سفر</a></li>
+          <li><a href="#">تماس با ما</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© ۱۴۰۴ علی‌بابا — تمامی حقوق محفوظ است.</span>
+      <span class="trust-seal">نماد اعتماد الکترونیکی</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
